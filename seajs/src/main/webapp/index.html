@@ -4,40 +4,29 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Template</title>
+<title>Bootstrap Template Debug</title>
+<!-- CSS -->
+<link href="base/spm_modules/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!-- jQuery  -->
-<script src="base/spm_modules/jquery/1.9.1/jquery.js" type="text/javascript"></script>
+<script src="base/spm_modules/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <!-- Bootstrap  -->
-<script src="base/spm_modules/seajs/2.3.0/dist/sea-debug.js" type="text/javascript"></script>
-<script src="base/spm_modules/seajs-css/1.0.2/dist/seajs-css-debug.js" type="text/javascript"></script>
-<script src="base/spm_modules/seajs-text/1.1.0/dist/seajs-text-debug.js" type="text/javascript"></script>
-<script src="base/spm_modules/seajs-wrap/1.0.2/dist/seajs-wrap-debug.js" type="text/javascript"></script>
+<script src="base/spm_modules/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- seajs  -->
+<script src="base/spm_modules/seajs/2.3.0/dist/sea.js" type="text/javascript"></script>
+<script src="base/spm_modules/seajs-css/1.0.2/dist/seajs-css.js" type="text/javascript"></script>
+<script src="base/spm_modules/seajs-text/1.1.0/dist/seajs-text.js" type="text/javascript"></script>
+<script src="base/spm_modules/seajs-wrap/1.0.2/dist/seajs-wrap.js" type="text/javascript"></script>
+<script src="base/spm_modules/seajs-conf/0.0.1/dist/seajs-conf.js" type="text/javascript"></script>
 <script>
 
-	seajs.config({
-		base : "./",
-		debug : true,
-		paths : {
-			'bootstrap' : 'base/spm_modules/bootstrap/3.3.1',
-			'source-map' : 'base/spm_modules/source-map2/0.1.31',
-			'handlebars' : 'base/spm_modules/handlebars/2.0.0',
-			'base' : 'base/dist/base/0.0.0'
-		},
-		alias : {
-			"bootstrap" : "bootstrap/js/bootstrap.js",
-			"source-map" : "source-map/lib/source-map.js",
-			"handlebars" : "handlebars/dist/handlebars.js"
-		}
-	});
-
-	 seajs.use(["base/index.css?","base/index"], function() {
-		 
-	});  
+	seajs.use(["dist/artifact/0.0.0/index.css?","dist/artifact/0.0.0/index.js"], function(i) {
+		
+	}); 
 </script>
 </head>
 <body>
 	<div class="container-fluid">
-		<h1>你好，GitHub!</h1>
+		<h1>你好，世界！</h1>
 	</div>
 </body>
 </html>

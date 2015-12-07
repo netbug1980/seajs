@@ -5,36 +5,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bootstrap Template Debug</title>
-<!-- Bootstrap -->
-<link href="base/index.less" rel="stylesheet/less" type="text/css">
+<!-- CSS -->
+<link href="base/spm_modules/bootstrap/3.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
 <!-- Less  -->
+<link href="index.less" rel="stylesheet/less" type="text/css">
 <script src="base/spm_modules/less/dist/less.js" type="text/javascript"></script>
 <!-- jQuery  -->
 <script src="base/spm_modules/jquery/1.9.1/jquery.js" type="text/javascript"></script>
 <!-- Bootstrap  -->
+<script src="base/spm_modules/bootstrap/3.3.1/js/bootstrap.js" type="text/javascript"></script>
+<!-- seajs  -->
 <script src="base/spm_modules/seajs/2.3.0/dist/sea-debug.js" type="text/javascript"></script>
 <script src="base/spm_modules/seajs-css/1.0.2/dist/seajs-css-debug.js" type="text/javascript"></script>
 <script src="base/spm_modules/seajs-text/1.1.0/dist/seajs-text-debug.js" type="text/javascript"></script>
 <script src="base/spm_modules/seajs-wrap/1.0.2/dist/seajs-wrap-debug.js" type="text/javascript"></script>
+<script src="base/spm_modules/seajs-conf/0.0.1/dist/seajs-conf.js" type="text/javascript"></script>
 <script>
 
-	seajs.config({
-		base : "./",
-		debug : true,
-		paths : {
-			'bootstrap' : 'base/spm_modules/bootstrap/3.3.1',
-			'source-map' : 'base/spm_modules/source-map2/0.1.31',
-			'handlebars' : 'base/spm_modules/handlebars/2.0.0',
-			'base-debug' : 'base'
-		},
-		alias : {
-			"bootstrap" : "bootstrap/js/bootstrap.js",
-			"source-map" : "source-map/lib/source-map.js",
-			"handlebars" : "handlebars/dist/handlebars.js"
-		}
-	});
-
-	seajs.use(["base-debug/index"], function(i) {
+	seajs.use(["index"], function(i) {
 		
 	}); 
 </script>
